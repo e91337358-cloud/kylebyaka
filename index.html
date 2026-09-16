@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelExplorer — Открой для себя новые горизонты</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✈</span>
+        Travel<span>Explorer</span>
+      </a>
+
+      <button class="burger-btn" id="burger-btn" aria-label="Переключить меню навигации" aria-expanded="false">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Главная</a></li>
+          <li class="nav-item"><a href="#destinations" class="nav-link">Направления</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tagline">Ваш идеальный отпуск начинается здесь</span>
+        <h1 class="hero-title">Открой для себя новые горизонты</h1>
+        <p class="hero-subtitle">
+          Путешествуйте по самым живописным и удивительным уголкам планеты. Незабываемые впечатления, проверенные маршруты и первоклассный сервис.
+        </p>
+        <div class="hero-actions">
+          <a href="#destinations" class="btn btn-primary">Выбрать направление</a>
+          <a href="#about" class="btn btn-outline">Узнать больше</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations section" id="destinations">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Популярные направления</h2>
+          <p class="section-subtitle">
+            Выберите тур мечты из нашей тщательно отобранной коллекции лучших путешествий
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="beach">Пляжи</button>
+          <button class="filter-btn" data-filter="mountains">Горы</button>
+        </div>
+
+        <!-- Destinations Grid -->
+        <div class="destinations-grid" id="destinations-grid">
+          <!-- Card 1: Maldives (Beach) -->
+          <article class="destination-card beach" data-category="beach">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" 
+                alt="Мальдивские острова" 
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="card-badge">Пляж</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-rating">★ 4.9 (128 отзывов)</span>
+                <span class="card-duration">7 ночей</span>
+              </div>
+              <h3 class="card-title">Мальдивские острова</h3>
+              <p class="card-description">
+                Белоснежные песчаные пляжи, кристально чистые бирюзовые лагуны и роскошные виллы над водой для максимального уединения.
+              </p>
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-label">Стоимость:</span>
+                  <span class="price-value">от $1,200</span>
+                </div>
+                <a href="#contact" class="btn btn-card">Забронировать</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Swiss Alps (Mountains) -->
+          <article class="destination-card mountains" data-category="mountains">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" 
+                alt="Швейцарские Альпы" 
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="card-badge">Горы</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-rating">★ 4.8 (94 отзыва)</span>
+                <span class="card-duration">6 ночей</span>
+              </div>
+              <h3 class="card-title">Швейцарские Альпы</h3>
+              <p class="card-description">
+                Величественные заснеженные пики, чистейший альпийский воздух, панорамные фуникулеры и уютные горные шале.
+              </p>
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-label">Стоимость:</span>
+                  <span class="price-value">от $1,500</span>
+                </div>
+                <a href="#contact" class="btn btn-card">Забронировать</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Bali (Beach) -->
+          <article class="destination-card beach" data-category="beach">
+            <div class="card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" 
+                alt="Остров Бали" 
+                class="card-img"
+                loading="lazy"
+              >
+              <span class="card-badge">Пляж</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-rating">★ 4.9 (210 отзывов)</span>
+                <span class="card-duration">10 ночей</span>
+              </div>
+              <h3 class="card-title">Остров Бали</h3>
+              <p class="card-description">
+                Тропические водопады, знаменитые споты для серфинга, древние храмы и золотистые закаты на побережье Индийского океана.
+              </p>
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-label">Стоимость:</span>
+                  <span class="price-value">от $950</span>
+                </div>
+                <a href="#contact" class="btn btn-card">Забронировать</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="section-tag">О компании</span>
+            <h2 class="section-title">Мы создаем путешествия, которые вдохновляют</h2>
+            <p class="about-text">
+              Более 10 лет команда TravelExplorer помогает путешественникам открывать самые удивительные уголки нашей планеты. Мы берем на себя все заботы по организации: от индивидуального подбора тура до круглосуточной поддержки во время поездки.
+            </p>
+            <div class="features-list">
+              <div class="feature-item">
+                <div class="feature-icon">🌟</div>
+                <div class="feature-info">
+                  <h4>10+ лет опыта</h4>
+                  <p>Проверенные маршруты и эксклюзивные контракты с лучшими отелями.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-info">
+                  <h4>100% надежность</h4>
+                  <p>Полное страхование поездок и официальное оформление всех документов.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🎧</div>
+                <div class="feature-info">
+                  <h4>Поддержка 24/7</h4>
+                  <p>Персональный тревел-консьерж всегда на связи в любой точке мира.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" 
+              alt="Путешествия с TravelExplorer" 
+              class="about-img"
+              loading="lazy"
+            >
+            <div class="about-stats-card">
+              <span class="stat-number">50 000+</span>
+              <span class="stat-desc">Довольных путешественников</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Свяжитесь с нами</h2>
+          <p class="section-subtitle">
+            Оставьте заявку, и наш тревел-эксперт свяжется с вами в течение 15 минут для консультации
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Контактная информация</h3>
+            <p class="contact-intro">Мы всегда рады ответить на ваши вопросы и помочь подобрать идеальный маршрут.</p>
+            <ul class="contact-list">
+              <li>
+                <span class="icon">📍</span>
+                <span>г. Москва, ул. Арбат, 24, офис 305</span>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <span>+7 (495) 123-45-67</span>
+              </li>
+              <li>
+                <span class="icon">✉️</span>
+                <span>info@travelexplorer.ru</span>
+              </li>
+              <li>
+                <span class="icon">🕒</span>
+                <span>Пн-Вс: 09:00 — 21:00</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Спасибо за заявку! Наш менеджер свяжется с вами.');">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Электронная почта</label>
+              <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Пожелания к поездке</label>
+              <textarea id="message" name="message" rows="4" placeholder="Куда и когда вы планируете отправиться?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-icon">✈</span>
+          Travel<span>Explorer</span>
+        </a>
+        <p class="footer-description">
+          Ваш надежный проводник в мир путешествий и приключений. Открывайте неизведанное вместе с нами.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#destinations">Направления</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Популярное</h4>
+        <ul class="footer-links">
+          <li><a href="#destinations">Мальдивские острова</a></li>
+          <li><a href="#destinations">Швейцарские Альпы</a></li>
+          <li><a href="#destinations">Остров Бали</a></li>
+          <li><a href="#destinations">Горящие туры</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Мы в соцсетях</h4>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Telegram">TG</a>
+          <a href="#" class="social-link" aria-label="VK">VK</a>
+          <a href="#" class="social-link" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 TravelExplorer. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
