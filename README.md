@@ -1,1 +1,1 @@
-Gemini / Antigravity / ChatGPT
+Gemini (План) / Antigravity (Код) / ChatGPT (Вопросы)
